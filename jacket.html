@@ -99,15 +99,18 @@
             </div>
         </div>
 
-        <div class="footer d-flex align-items-center">
-            <button onclick="showPreviousPage();" class="h-100">Back</button>
-                <h3 class="p-0 m-0">Choose Your Design</h3>
-            <button onclick="showNextPage();" class="h-100">Next</button>
+        <div class="footer">
+            <button onclick="showPreviousPage();">Back</button>
+
+            <button onclick="showNextPage();">Next</button>
         </div>
         <!-- Home page -->
         <div class="content div-content-home  w-100">
-
-                
+            <strong class="title-page text-center">
+                <h3 class="page-style">
+                    Choose Your Design
+                </h3>
+            </strong>
 
             <div class="card-container">
                 <div class="card" onclick="selectImage(this)">
@@ -1595,8 +1598,10 @@
                 <!-- Special Info page -->
                 <div class="content">
                     <div class="div-content-special">
-                        <strong>
-                            <h3>COLOR</h3>
+                        <strong class="title-page text-center">
+                            <h3 class="page-style">
+                                Choose Colors
+                            </h3>
                         </strong>
                         <div class="row">
                             <div class="containers-button ">
@@ -1649,8 +1654,10 @@
 
                 <div class="content">
                     <div class=" div-content-contact">
-                        <strong>
-                            <h3>OPTIONS</h3>
+                        <strong class="title-page text-center">
+                            <h3 class="page-style">
+                                Choose Options
+                            </h3>
                         </strong>
                         <div class="row">
                             <div class="containers-button  ">
@@ -1840,8 +1847,10 @@
                 <!-- About Us page -->
                 <div class="content">
                     <div class="div-content-Finsh ">
-                        <strong>
-                            <h3> PERSONALIZATION </h3>
+                        <strong class="title-page text-center">
+                            <h3 class="page-style">
+                                Personalize Your Suit
+                            </h3>
                         </strong>
                         <div class="containers-button ">
                             <div class="box-button">
@@ -2199,13 +2208,11 @@
 
                 <div class="content">
                     <div class="div-content-about ">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">Home</li>
-                                    <li class="breadcrumb-item">Library</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                                </ol>
-                            </nav>
+                        <strong class="title-page text-center">
+                            <h3 class="page-style">
+                                Submit Your Order
+                            </h3>
+                        </strong>
 
                         <div class="containers-button ">
                             <div class="box-button">
@@ -2264,11 +2271,16 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="radio-boxss2">
+
                         </div>
+
+
                         <div class="radio-boxss3">
                             <div class="inputss">
                                 <div class="form-container">
+
                                     <form>
                                         <div class="form-group">
                                             <label for="name">NAME</label>
@@ -2303,11 +2315,20 @@
                                     </form>
                                 </div>
                             </div>
+
                         </div>
+
+
                         <div class="radio-boxss4">
+
                         </div>
+
+
+
+
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -2326,7 +2347,6 @@
     <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-
         document.addEventListener('DOMContentLoaded', function () {
             window.addEventListener('scroll', function () {
                 if (window.pageYOffset > 250) {
@@ -2335,8 +2355,8 @@
                     document.querySelector('.header').classList.remove("sticky-nav");
                 }
             });
-        });
 
+        });
     </script>
 </body>
 
