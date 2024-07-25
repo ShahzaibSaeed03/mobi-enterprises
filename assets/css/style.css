@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+/* html{
+    background-color: #682000;
+} */
+
+.top-header {
+    /* overflow: hidden; */
+    width: 100%;
+    background: #b05d36;
+    padding: 15px 10px 8px;
+}
+.sticky-nav {
+    width: 100%;
+
+    top: 0;
+    position: fixed;
+    transition: top 0.9s ease;
+    transition: 0.9s;
+    width: 100% !important;
+    z-index: 999999;
+    animation: slideDown 0.9s ease forwards;
+    background: #b05d36;
+}
+.sticky-nav .navbarss .mobi-logo span{
+ color: black;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+.top-header h1 {
+    font-weight: 600;
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+
+/* .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1270px;
+} */
+
+.top-header a {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .35s ease;
+}
+
+.top-header a img {
+    vertical-align: text-bottom;
+}
+
+.video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.navbarss {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: 11;
+}
+
+.lang-bar ul {
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lang-bar ul li {
+    width: 35px;
+    height: 35px;
+    background: black;
+    text-align: center;
+    line-height: 35px;
+    list-style: none;
+}
+
+.lang-bar ul li a {
+    color: white;
+    cursor: pointer;
+}
+
+.auth-bar {
+    margin-bottom: 10px;
+}
+
+.auth-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.banner-text {
+    /* padding-top: 200px; */
+    display: flex;
+   justify-content: center;
+   text-align: left;
+   /* align-items: center; */
+   width: 100%;
+   height: 100%;
+    flex-direction: column;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: #682000;
+}
+.banner-text p{
+    font-size: 18px;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/final.png);
+    /* background-color: #682000; */
+    background-position: center z;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    background-color: #682000;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    width: 180px;
+    text-decoration: none;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+    color: #ffff;
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+.slidersuit .owl-item {
+    width: 350px !important;
+}
+.banner-slider-img img{
+   overflow: hidden;
+   height: 400px;
+}
+.s-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #bb082f;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #BB082F;
+}
+
+
+/* login form   */
+.login-container {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    background-color: #fff;
+    max-width: 300px;
+    /* margin: 50px auto; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
+
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.login-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+.login-container .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D0021B;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-container .login-button:hover {
+    background-color: #A00116;
+}
+.login-container .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.login-container .forgot-password a {
+    color: #000;
+    text-decoration: none;
+}
