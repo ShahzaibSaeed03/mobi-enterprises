@@ -150,33 +150,28 @@ hr {
 
 
 .card-container {
-    /* background-color: #ccc; */
     display: flex;
-    gap: 0px 80px; /* Space between cards */
-    justify-content: center; /* Center the cards horizontally */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    margin-top: 35px;
+    gap: 0px 80px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center;
+    margin-top: 30px;
 }
 .card-containers {
-    /* background-color: #ccc; */
     display: flex;
     position: relative;
     top: -100px;
-    gap: 0px 40px; /* Space between cards */
-    justify-content: center; /* Center the cards horizontally */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    /* align-items: center; */
+    gap: 0px 40px;
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 
 .card {
-    /* position: relative; */
-    /* top: -45px; */
-    width: 200px;
-    height: 300px;
+    width: 230px;
+    height: 350px;
     box-shadow: 0 10px 18px rgba(176, 93, 54, 0.9);
     border-radius: 31px;
-    /* overflow: hidden; */
     background-color: #682000;
     cursor: pointer;
     padding: 10px;
@@ -214,8 +209,8 @@ bottom: 0;
     
 }
 footer p{
-    font-size: 23px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 400;
     width: 100%;
     text-align: center;
     margin-top: 0;
