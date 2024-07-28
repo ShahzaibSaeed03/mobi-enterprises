@@ -39,12 +39,12 @@
                             <img src="assets/imgs/mobime.png" alt="mobime" height="60px" width="150px">
                         </div>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 justify-content-around">
                         <div class="d-flex justify-content-end">
-                            <div class="auth-bar d-flex justify-content-end align-items-center">
+                            <div class="auth-bar d-flex justify-content-end align-items-center" id="logins">
                                 <a href="#" id="login">LOGIN</a>
                                 <span class="text-white">/</span>
-                                <a href="#">REGISTER</a>
+                                <a href="#" >REGISTER</a>
                             </div>
                             <div class="lang-bar m-0 p-0">
                                 <ul class="d-flex justify-content-end align-items-center">
@@ -54,6 +54,9 @@
                                     <li><a href="#">SK</a></li>
                                     <li><a href="#">PL</a></li>
                                 </ul>
+                            </div>
+                            <div class="track-order">
+                                <p class="black">Track Your Order</p>
                             </div>
                         </div>
                     </div>
@@ -69,10 +72,11 @@
             </div>
         </div>
         <div id="otherContent" style="display: none;">
-            <div class="container-fluid mt-5 main-container">
-                <div class=" w-100">
-                    <div class="row ">
-                        <div class="col-md-6">
+            
+            <div class="container-fluid main-container">
+                <div class="w-100">
+                    <div class="row">
+                        <div class="col-md-6 ">
                             <div class="banner-text">
                                 <h1 class="text-capitalize">
                                     MOBI <br> ENTERPRISES
@@ -82,99 +86,79 @@
                                     <br>
                                     creation as unique as you.
                                 </p>
-                                <div class="slider-btn text-center">
-                                    <a href="contact.html" class="button d-block">
-                                        Get Started
-                                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                                            <path clip-rule="evenodd"
-                                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                                                fill-rule="evenodd"></path>
-                                        </svg>
-                                    </a>
+                                <div class="started">
+                                    <p>Get Started</p>
+                                    <!-- <div class="carousel-indicators custom-carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="banner-slider-img w-100">
+                            <div class="banner-slider-img ">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-indicators ">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="5" aria-label="Slide 6"></button>
-
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                    </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <a href="jacket.html">
                                                 <div class="s-img">
-                                                    <img src="assets/imgs/suits/slider1.png" alt="..."
-                                                        class=" img-fluid">
+                                                    <img src="assets/imgs/suits/slider1.png" alt="..." class="img-fluid">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="s-img">
                                                 <a href="uper-jacket.html">
-                                                    <img src="assets/imgs/shirt.png" alt="..." class=" img-fluid">
+                                                    <img src="assets/imgs/shirt.png" alt="..." class="img-fluid">
+                                                </a>
                                             </div>
-                                            </a>
                                         </div>
                                         <div class="carousel-item">
                                             <a href="bag.html">
                                                 <div class="s-img">
-                                                    <img src="assets/imgs/bag.png" alt="..." class=" img-fluid">
+                                                    <img src="assets/imgs/bag.png" alt="..." class="img-fluid">
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="s-img">
                                                 <a href="shoes.html">
-                                                    <img src="assets/imgs/shoes.png" alt="..." class=" img-fluid">
+                                                    <img src="assets/imgs/shoes.png" alt="..." class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="s-img">
                                                 <a href="belts.html">
-                                                    <img src="assets/imgs/belt.png" alt="..." class=" img-fluid">
+                                                    <img src="assets/imgs/belt.png" alt="..." class="img-fluid">
+                                                </a>
                                             </div>
-                                            </a>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="s-img">
                                                 <a href="gloves.html">
-                                                    <img src="assets/imgs/gloves.png" alt="..." class=" img-fluid">
+                                                    <img src="assets/imgs/gloves.png" alt="..." class="img-fluid">
+                                                </a>
                                             </div>
-                                            </a>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="s-img">
                                                 <a href="wallets.html">
-                                                    <img src="assets/imgs/walits/wallet 2.png" alt="..."
-                                                        class=" img-fluid">
+                                                    <img src="assets/imgs/walits/wallet 2.png" alt="..." class="img-fluid">
+                                                </a>
                                             </div>
-                                            </a>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <button class="carousel-control-prev ms-5" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <button class="carousel-control-next me-5" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -183,39 +167,147 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="login-container">
-                <h2>USER LOG IN</h2>
-                <form>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+      <div class="bottom-text">
+        <p>Design your story in leather</p>
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label>
-                        <input type="checkbox" name="permanent_login">
-                        Permanent login
-                    </label>
-
-                    <button type="submit" class="login-button">LOG IN</button>
-
-                    <div class="forgot-password">
-                        <a href="#">FORGOT YOUR PASSWORD?</a>
-                    </div>
-                </form>
-            </div>
+      </div>
+            
+<!--             
+            <div class="login-buttons">
+                <h3>LOG IN / REGISTER</h3>
+                
+            </div> -->
+            
             <div class="social-icon">
                 <img src="assets/imgs/facebook.png" alt="">
                 <img src="assets/imgs/whastapp.png" alt="">
                 <img src="assets/imgs/instagram.png" alt="">
      
              </div>
+             
+            <div class="login-check" id="login-container">
+                <div class="text-head bg-white">
+                   <p> login / Register </p>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" id="registerCheckbox">
+                        Register
+                    </label>
+                </div>
+            
+        
+            <div>
+                <label>
+                    <input type="checkbox" id="loginCheckbox">
+                    Log in
+                </label>
+            </div>
+        </div>
+        
+            <div id="loginForm" class="form-container">
+                <!-- Login form content goes here -->
+                <div class="login-container">
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <h2>USER LOG IN</h2>
+                    <form>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+    
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+    
+                        <label>
+                            <input type="checkbox" name="permanent_login">
+                            Permanent login
+                        </label>
+    
+                        <button type="submit" class="login-button">LOG IN</button>
+    
+                        <div class="forgot-password">
+                            <a href="#">FORGOT YOUR PASSWORD?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="registerForm" class="form-container">
+                <!-- Register form content goes here -->
+                <div class="container">
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <h2>REGISTRATION</h2>
+                    <!-- <h3>LOGIN INFORMATION</h3> -->
+                    <form action="#" method="post">
+                        <label for="email">E-mail <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" name="password" required>
+            
+                        <label for="password_confirmation">Password confirmation <span class="required">*</span></label>
+                        <input type="password" id="password_confirmation" name="password_confirmation" required>
+            
+                        <h3>BILLING INFORMATION</h3>
+                        <div class="radio-group">
+                            <label><input type="radio" name="billing" value="individual" checked> Individual</label>
+                            <label><input type="radio" name="billing" value="company"> Company</label>
+                        </div>
+                        <div class="bill">
+                            <div class="bill1">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+            
+                                <label for="surname">Surname <span class="required">*</span></label>
+                                <input type="text" id="surname" name="surname" required>
+            
+                                <label for="street">Street and House No. <span class="required">*</span></label>
+                                <input type="text" id="street" name="street" required>
+                            </div>
+                            <div class="bill-2">
+                                <label for="city">City <span class="required">*</span></label>
+                                <input type="text" id="city" name="city" required>
+            
+                                <label for="phone">Phone <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+            
+                                <label for="zipcode">Zip code <span class="required">*</span></label>
+                                <input type="text" id="zipcode" name="zipcode" required>
+            
+                                <label for="country">Country <span class="required">*</span></label>
+                                <select id="country" name="country" required>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="United States of America">United States of America</option>
+                                    <option value="India">India</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <label><input type="checkbox" name="delivery_billing"> Delivery and billing addresses vary</label>
+            
+                        <div class="terms">
+                            <label><input type="checkbox" name="terms" required> I agree with <a href="#" style="color:#fff;text-decoration:underline;">Terms & Conditions</a> <span class="required">*</span></label>
+                        </div>
+            
+                        <button type="submit" class="button">CONTINUE <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
         </div>
        
     </div>
-    
+    <footer>
+        <p>POWERED BY: MOBI ENTERPRISES.COM</p>
+    </footer>
 
     <!-- ==============scripts================== -->
 

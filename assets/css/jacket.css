@@ -14,7 +14,7 @@
     display: flex;
     width: 100%;
     /* justify-content: space-around; */
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .mobi-text {
@@ -67,6 +67,7 @@
 
 .content {
     display: none; /* Hide all content divs by default */
+    height: 100% !important;
 }
 
 .footer {
@@ -167,6 +168,7 @@ hr {
 }
 .card-containers {
     display: flex;
+    height: 100%;
     /* position: relative; */
     /* top: -100px; */
     gap: 0px 40px;
@@ -200,11 +202,7 @@ hr {
 }
 
 
-.cardsimg img{
-    width: 197px; /* Set the width of each card */
-    height: 300px; 
-  
-}
+
 
 footer{
     width: 100%;
@@ -1216,7 +1214,7 @@ form button:hover {
   /* svg css  */
 
   .cards svg {
-    height: 320px;
+    height: 300px;
   }
 
   .base {
