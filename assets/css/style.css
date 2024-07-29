@@ -83,7 +83,7 @@
      border-radius:7px ;
     /* padding: 10px 10px; */
     width: 170px;
-    height: 31px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,12 +250,15 @@ a {
 .form-container {
     display: none;
     position: fixed;
-    top: 25%; /* Adjust this value as needed */
+    /* strong: 600px; */
+    top: 28%; /* Adjust this value as needed */
     left: 50%;
     transform: translate(-50%);
     width: 50%;
     max-height: 370px;
     /* background-color: #ac8b7d; */
+
+    z-index: 1000; /* Ensure the container appears on top */
 
 }
 
@@ -408,10 +411,11 @@ footer p{
     background-color: #fff;
 }
 
+
 #login-container{
     display: none;
     position: fixed;
-    top: 50px;
+    top: 55px;
     left: 35%;
     /* background-color: rgba(0, 0, 0, 1); */
     border-radius: 12px;
@@ -423,43 +427,58 @@ footer p{
     font-family: Arial, sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 1);
-    width: fit-content;
-    padding: 20px;
+    min-width: 150px;
+    /* padding: 20px ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .text-head  p{
     color: #000;
+    background-color: #ffffff;
 }
 
 .form-container.active {
     display: block;
 }
-label {
+.login-check label {
     cursor: pointer;
+    margin-left: 10px;
 }
-input[type="checkbox"] {
+
+.login-check input[type="checkbox"] {
     position: relative;
     margin-right: 10px;
-}
-input[type="checkbox"]:checked {
-    outline: none;
-    border: 2px solid red;
-    
-}
-input[type="checkbox"]::after {
-    content: "";
-    display: inline-block;
+    appearance: none; /* Remove default styling */
     width: 16px;
     height: 16px;
-    border: 1px solid #fff;
+    border: 2px solid #fff; /* Default border color */
     border-radius: 50%;
+    background-color: #000; /* Default background color */
+}
 
-    background-color: #000;
+.login-check input[type="checkbox"]:checked {
+    border: 2px solid white; /* Border color when checked */
+    background-color: red; /* Background color when checked */
 }
-input[type="checkbox"]:checked::after {
-    border: 2px solid white;
-    background-color: red;
+
+.login-check input[type="checkbox"]::after {
+    content: "";
+    display: inline-block;
+    width: 12px; /* Adjust as needed */
+    height: 12px; /* Adjust as needed */
     border-radius: 50%;
+    background-color: transparent; /* Initially transparent */
+    position: absolute;
+    padding: 2px;
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
 }
+
+.login-check input[type="checkbox"]:checked::after {
+    background-color: red; /* Color of inner circle when checked */
+}
+
 
 
 /* signup  */

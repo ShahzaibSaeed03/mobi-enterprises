@@ -133,81 +133,52 @@ showInput('finsh', 'radio-boxss', 4);
 // Show the initial home page by default
 showCurrentPage();
 
+// Function to update the color of a CSS class
 function updateColor(className, color) {
+    // Find the stylesheet that contains the rule for the given className
     const stylesheet = Array.from(document.styleSheets).find((sheet) =>
-      Array.from(sheet.cssRules).some(
-        (rule) => rule.selectorText === className
-      )
+        Array.from(sheet.cssRules).some(
+            (rule) => rule.selectorText === className
+        )
     );
 
     if (stylesheet) {
-      const rule = Array.from(stylesheet.cssRules).find(
-        (rule) => rule.selectorText === className
-      );
-      if (rule) {
-        rule.style.setProperty("fill", color, "important");
-        // alert(`Color for ${className} changed to ${color}`);
-      } else {
-        alert(`Error: No rule found for ${className}`);
-      }
+        const rule = Array.from(stylesheet.cssRules).find(
+            (rule) => rule.selectorText === className
+        );
+        if (rule) {
+            rule.style.setProperty("fill", color, "important");
+        } else {
+            console.error(`Error: No rule found for ${className}`);
+        }
     } else {
-      alert(`Error: No stylesheet found containing ${className}`);
+        console.error(`Error: No stylesheet found containing ${className}`);
     }
-  }
+}
 
-  document
-    .getElementById("colorBase")
-    .addEventListener("input", function (event) {
-      try {
-        const color = event.target.value;
-        updateColor(".base", color);
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
-    });
+// Function to handle color input changes
+function setupColorInputs() {
+    const colorInputs = [
+        { id: "colorBase", className: ".c1" }, // Assuming "colorBase" maps to ".c1"
+        { id: "colorC1", className: ".c2" },
+        { id: "colorC2", className: ".c3" },
+        { id: "colorC3", className: ".c4" },
+        { id: "colorC4", className: ".c4" },
+        { id: "colorC5", className: ".c6" },
+        // { id: "colorC6", className: ".c7" },
+    ];
 
-  document
-    .getElementById("colorC1")
-    .addEventListener("input", function (event) {
-      try {
-        const color = event.target.value;
-        updateColor(".c1", color);
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
+    colorInputs.forEach(({ id, className }) => {
+        document.getElementById(id).addEventListener("input", function(event) {
+            try {
+                const color = event.target.value;
+                updateColor(className, color);
+            } catch (error) {
+                console.error("Error: " + error.message);
+            }
+        });
     });
-
-  document
-    .getElementById("colorC2")
-    .addEventListener("input", function (event) {
-      try {
-        const color = event.target.value;
-        updateColor(".c2", color);
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
-    });
-
-    document
-    .getElementById("colorC3")
-    .addEventListener("input", function (event) {
-      try {
-        const color = event.target.value;
-        updateColor(".c3", color);
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
-    });
-    document
-    .getElementById("colorC4")
-    .addEventListener("input", function (event) {
-      try {
-        const color = event.target.value;
-        updateColor(".c4", color);
-      } catch (error) {
-        alert("Error: " + error.message);
-      }
-    });
+}
 
 // Call the setup function to attach event listeners
-// setupColorInputs();
+setupColorInputs();

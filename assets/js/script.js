@@ -45,6 +45,40 @@ displayLoginButton.addEventListener('click', (event) => {
     }
 });
 
+
+function selectImage(card) {
+    // Check if the clicked card already has 'selected' class
+    if (card.classList.contains('selected')) {
+        // If yes, remove 'selected' class from the clicked card
+        card.classList.remove('selected');
+    } else {
+        // Remove 'selected' class from all cards
+        document.querySelectorAll('.card').forEach(function(el) {
+            el.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked card
+        card.classList.add('selected');
+    }
+}
+
+function showNextPage() {
+    var selectedCard = document.querySelector('.card.selected');
+    var popUp = document.getElementsByClassName("pop-up")[0];
+
+    if (selectedCard) {
+        currentPageIndex = (currentPageIndex + 1) % contentDivs.length;
+        showCurrentPage();
+    } else {
+        popUp.classList.add('show');
+        setTimeout(function() {
+            popUp.classList.remove('show');
+        }, 1000);
+    }
+}
+
+
+
  
     // var myCarousel = document.querySelector('#carouselExampleIndicators');
     //     var carousel = new bootstrap.Carousel(myCarousel, {
