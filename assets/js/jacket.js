@@ -160,7 +160,7 @@ function updateColor(className, color) {
     .addEventListener("input", function (event) {
       try {
         const color = event.target.value;
-        updateColor(".base", color);
+        updateColor(".c1", color);
       } catch (error) {
         alert("Error: " + error.message);
       }
@@ -171,7 +171,7 @@ function updateColor(className, color) {
     .addEventListener("input", function (event) {
       try {
         const color = event.target.value;
-        updateColor(".c1", color);
+        updateColor(".c2", color);
       } catch (error) {
         alert("Error: " + error.message);
       }
@@ -182,7 +182,7 @@ function updateColor(className, color) {
     .addEventListener("input", function (event) {
       try {
         const color = event.target.value;
-        updateColor(".c2", color);
+        updateColor(".c3", color);
       } catch (error) {
         alert("Error: " + error.message);
       }
@@ -193,7 +193,7 @@ function updateColor(className, color) {
     .addEventListener("input", function (event) {
       try {
         const color = event.target.value;
-        updateColor(".c3", color);
+        updateColor(".c4", color);
       } catch (error) {
         alert("Error: " + error.message);
       }
@@ -203,7 +203,7 @@ function updateColor(className, color) {
     .addEventListener("input", function (event) {
       try {
         const color = event.target.value;
-        updateColor(".c4", color);
+        updateColor(".c5", color);
       } catch (error) {
         alert("Error: " + error.message);
       }
